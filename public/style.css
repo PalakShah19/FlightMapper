@@ -1,0 +1,165 @@
+/* Basic styles */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+header {
+  background-color: #007bff; /* Blue */
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #007bff; /* Blue */
+}
+
+input {
+  padding: 0.5rem;
+  margin: 0.4rem 0.4rem 0.8rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff; /* Blue */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker Blue */
+}
+
+.inline-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Material-style card layout for all result sections */
+.material-cards h3 {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.5rem;
+  color: #333;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #007bff; /* Blue */
+}
+
+.material-cards ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.material-cards li {
+  padding: 0.8rem 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.material-cards li:hover {
+  transform: translateY(-2px);
+  background-color: #e6f0ff; /* Light blue background on hover */
+}
+
+/* Material card style for Airport Details Info lines */
+#airport-results p {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 0.6rem 1rem;
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+/* Dropdown (details-summary) styling for collapsible effect */
+details {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+summary {
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #007bff; /* Blue */
+  outline: none;
+  padding: 0.5rem 0;
+}
+
+details[open] summary {
+  color: #0056b3; /* Darker blue when expanded */
+}
+
+details > div {
+  margin-top: 0.5rem;
+}
+

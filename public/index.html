@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Check Flights</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+<header>
+  <h1>Check Flights</h1>
+  <p>Explore Airports, Airlines, and Global Flight Routes</p>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Search by Country</h2>
+    <input type="text" id="country-input" placeholder="Enter country name" />
+    <button id="search-country">Search</button>
+
+    <details open>
+      <summary>Airlines</summary>
+      <div id="airlines-results" class="material-cards"></div>
+    </details>
+
+    <details>
+      <summary>Airports</summary>
+      <div id="airports-results" class="material-cards"></div>
+    </details>
+  </section>
+
+  <section class="card">
+    <h2>Airport Details</h2>
+    <div id="airport-results" class="material-cards"></div>
+  </section>
+
+  <section class="card">
+    <h2>Compare Two Airports</h2>
+    <div class="inline-inputs">
+      <input type="text" id="departure-airport" placeholder="Departure IATA" />
+      <input type="text" id="arrival-airport" placeholder="Arrival IATA" />
+      <button id="search-pair">Find Routes & Distance</button>
+      <button id="show-map-route">Show Route on Map</button>
+    </div>
+    <div id="pair-results"></div>
+  </section>
+
+  <section class="card">
+    <h2>Route Map</h2>
+    <div id="map"></div>
+  </section>
+</main>
+
+<script src="client.js"></script>
+</body>
+</html>
+
