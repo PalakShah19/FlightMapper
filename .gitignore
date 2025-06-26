@@ -1,0 +1,32 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Ignore all files in public folder
+public/*
+
+# Uncomment below if you want to keep some files in public (adjust as needed)
+# !public/index.html
+# !public/style.css
+
+# Temporary files and swap files
+*.swp
+*~
+
+# Ignore files with underscore in name (if you want)
+# *_*
